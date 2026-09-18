@@ -1,0 +1,225 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# Environment files (ignore actual env, but keep examples)
+.env
+.env.local
+.env.production
+.env.development
+backend/.env
+backend/.env.local
+backend/.env.production
+frontend/.env.local
+frontend/.env.production
+
+# BUT keep .env.example files (they're templates, should be committed)
+!.env.example
+!*.env.example
+!backend/.env.example
+!frontend/.env.example
+
+backend/src/__pycache__/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+backend/instance/
+instance/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Claude settings
+.claude/settings.local.json
+
+# Node
+node_modules/
+
+# MacOS
+.DS_Store
+
+# Audio/Video debug
+backend/audio_debug/
+*.webm
+*.wav
+*.mp4
+*.ogg
+*.tmp
+
+# Logs
+*.log
+
+# Others
+*.bak
+*.swp
+
+# Ignore test outputs
+*.out
+*.test
+
+# Ignore frontend build
+frontend/.next/
+frontend/out/
+
+# Model files and checkpoints (Hugging Face)
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pkl
+*.pickle
+*.model
+*.task
+
+# Large model directories (exclude from git but keep structure for docs)
+models/**/*
+backend/models/**/*
+kaggle_output/**/*
+!models/.gitkeep
+!models/README.md
+!backend/models/.gitkeep
+!backend/models/README.md
+checkpoints/**/*
+!checkpoints/.gitkeep
+!checkpoints/README.md
+
+# Training outputs and logs (exclude except final results for documentation)
+backend/training/data/
+backend/training/packaged/
+backend/training/outputs/
+backend/training/logs/
+runs/
+tensorboard_logs/
+wandb/
+.wandb/
+
+# BUT keep important training documentation
+!backend/training/*.md
+!backend/training/README.md
+!backend/training/final_results/
+!*/README.md
+
+# Dataset files (large data)
+backend/dataset/**/*.wav
+backend/dataset/**/*.mp3
+backend/dataset/**/*.flac
+backend/dataset/**/*.m4a
+backend/dataset/**/*.webm
+backend/dataset/openslr36/
+backend/dataset/openslr36_zips/
+kaggle_dataset/**/*.wav
+kaggle_dataset/**/*.mp3
+kaggle_dataset/**/*.flac
+kaggle_dataset/**/*.m4a
+
+# BUT keep dataset manifests and documentation
+!**/*.json
+!**/*.txt
+!**/*.tsv
+!**/*.csv
+!**/README.md
+!**/dataset-metadata.json
+
+# Large compressed files
+*.csv
+*.tsv
+*.json.gz
+*.tar.gz
+*.zip
+*.rar
+*.7z
+dataset.zip
+kaggle_dataset.zip
+
+# BUT keep small documentation files
+!docs/**/*.zip
+!scripts/**/*.zip
+!notebooks/**/*.zip
+
+# Backups
+backups/
+
+# Logs
+logs/
+*.log
+
+# Cloudflare Tunnel credentials (NEVER COMMIT!)
+.cloudflared/*.json
+
+# Temporary files and outputs
+nul
+*.tmp
+*.temp
+temp/
+temp_audio/
+uploads/**/*
+!uploads/.gitkeep
+!uploads/README.md
+
+# Cache and temporary build files
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nyc_output
+coverage/
+
+# Editor and IDE files
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*_backup
+*_old
+*.orig
+
+# Test and development files
+test_*.py
+*_test.py
+debug_*
+sample_*
+*.debug
+
+# BUT keep important test files for documentation
+!tests/
+!backend/tests/
+!scripts/test_*.py
+
+# Folder untuk file yang dipindahkan (dokumentasi skripsi, dll)
+pindahkan/
+
+# Cleanup folder (temporary/unused files)
+delete-this-folder/
+
+# Local Netlify folder
+.netlify

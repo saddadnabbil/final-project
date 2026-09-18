@@ -1,0 +1,12 @@
+# Git LFS tracking untuk file besar
+# Uncomment baris di bawah jika sudah install Git LFS (git lfs install)
+
+# Training data (ZIP files only - untuk distribusi)
+# backend/training/packaged/*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Model files (jika mau share model hasil training)
+# *.bin filter=lfs diff=lfs merge=lfs -text
+# *.pt filter=lfs diff=lfs merge=lfs -text
+# *.pth filter=lfs diff=lfs merge=lfs -text
+# *.safetensors filter=lfs diff=lfs merge=lfs -text
+# *.onnx filter=lfs diff=lfs merge=lfs -text

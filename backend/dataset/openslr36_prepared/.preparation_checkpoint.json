@@ -1,0 +1,10 @@
+{
+  "stage": "complete",
+  "processed_entries": 3506496,
+  "valid_count": 219156,
+  "stats": {
+    "valid": 219156,
+    "missing_audio": 3287340
+  },
+  "last_updated": "2026-01-02T09:28:48.148036"
+}

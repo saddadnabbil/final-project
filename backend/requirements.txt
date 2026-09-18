@@ -1,0 +1,72 @@
+# Frameworks
+flask>=2.2
+flask-socketio>=5.3
+flask-cors>=4.0
+python-dotenv
+
+# Machine Learning & Processing
+# For CUDA 12.1 compatibility with CTranslate2 4.6+
+# Install with: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+torch>=2.0
+torchvision>=0.15
+torchaudio>=2.0
+# openai-whisper>=20231117  # Replaced with faster-whisper for 4-10x speedup
+faster-whisper>=1.0.0  # CTranslate2-based Whisper (much faster!)
+opencv-python>=4.7
+numpy>=1.23
+librosa>=0.10
+soundfile>=0.12
+scipy>=1.10
+pillow>=9.5
+accelerate>=0.20
+tqdm>=4.65
+
+# Translation Models
+transformers>=4.30
+sentencepiece>=0.1.99
+protobuf>=3.20
+# indobenchmark-toolkit  # Removed - no longer needed with NLLB-200
+
+# Hybrid Translation Options
+google-generativeai>=0.3.0  # Google Gemini (FREE, RECOMMENDED)
+# openai>=1.0.0  # OpenAI (paid, optional)
+tabulate>=0.9.0  # For test result tables
+
+# Audio decoding (untuk WebM support)
+pydub>=0.25.1
+audioread>=3.0.0
+
+# Facial Analysis (Optional - untuk Python 3.9-3.11)
+mediapipe>=0.10.9
+# Note: MediaPipe now supports newer Python versions
+# Sistem akan tetap berjalan tanpa MediaPipe (facial landmarks disabled)
+
+# WebSocket Server
+eventlet>=0.33
+
+# Build tools (penting untuk beberapa pip install)
+setuptools>=65
+wheel>=0.40
+
+# Database and Authentication
+Flask-SQLAlchemy>=3.0
+Flask-Bcrypt>=1.0
+PyJWT>=2.8
+
+# Production WSGI Servers
+gunicorn>=21.2.0  # Linux/Mac production server
+waitress>=2.1.2   # Windows production server (alternative to gunicorn)
+
+# Testing & Visualization (untuk BAB IV Skripsi)
+pytest>=7.0
+pytest-html>=4.0
+pytest-cov>=4.0
+matplotlib>=3.7
+requests>=2.28
+
+# Demo Mode (Google API - more accurate for Sundanese)
+SpeechRecognition>=3.10
+deep-translator>=1.11
+
+# Google OAuth
+google-auth>=2.0
